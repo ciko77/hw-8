@@ -103,20 +103,19 @@ section{
     text-shadow: none;
   }
 }
+  /* task 4 */
+/* }
 
-/* task 4 */
-
-.Spiner{
+.spinner-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #e9b3b3;
-
-}
-.spinner {
+ 
   position: relative;
+  margin-top: 130px;
+}
+
+.spinner {
+  display: flex;
+  position: absolute;
   width: 100px;
   height: 100px;
   animation: spin 2s linear infinite;
@@ -130,9 +129,11 @@ section{
   border-top-color: #3498db;
   border-radius: 50%;
   animation: spin 1s linear infinite;
+  cursor: pointer;
 }
 
-.ring:hover {
+.ring:hover,
+.spinner-container:hover .spinner:hover {
   animation-play-state: paused;
 }
 
@@ -144,19 +145,51 @@ section{
 .ring:nth-child(3) {
   animation-delay: -1s;
   border-top-color: #2ecc71;
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+}
 
-  .spinner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 16px;
-    font-family: "Arial", sans-serif;
-    pointer-events: none;
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
 }
+
+.spinner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  
+} */
+
+/* task 5 */
+
+
+.header1{
+  width: 100%;
+  background-color: rgb(21, 94, 56);
+  margin: 30px auto;
+  padding: 25px 300px;
+ display: flex;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+}
+  li{
+    color: #fff;
+    font-size: 20px;
+
+  }
+   
+  li:hover{
+    text-shadow: 5px 5px 5px #e941c2;
+  }
+ 
+  
+
+
+
+
